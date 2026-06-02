@@ -11,8 +11,14 @@ function render(template, data) {
   });
 }
 
+// Generate index.html
 const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf-8');
 const html = render(template, content);
 fs.writeFileSync(path.join(__dirname, 'index.html'), html, 'utf-8');
-
 console.log('✓ index.html generated');
+
+// Generate programme.html
+const programmeTemplate = fs.readFileSync(path.join(__dirname, 'programme-template.html'), 'utf-8');
+const programmeHtml = render(programmeTemplate, content);
+fs.writeFileSync(path.join(__dirname, 'programme.html'), programmeHtml, 'utf-8');
+console.log('✓ programme.html generated');

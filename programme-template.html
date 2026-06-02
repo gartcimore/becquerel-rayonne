@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme – {{event.title}} | {{association.name}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="Logo_small.png" alt="Becquerel Rayonne" class="logo-img"></a></div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#programme">Programme</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero hero-programme">
+        <h1>{{event.title}}</h1>
+        <p class="tagline">{{event.dateDisplay}} · {{event.location}}</p>
+        <p class="hero-subtitle">Programme détaillé de la journée</p>
+    </section>
+
+    <section id="programme" class="programme">
+        <p class="programme-intro">Cette journée viendra clôturer une semaine d'expositions et de décoration de la rue pour fêter nos 100 ans.</p>
+
+        <div class="programme-block">
+            <h2><span class="time-badge">14h00</span> Inauguration</h2>
+        </div>
+
+        <div class="programme-block">
+            <h2><span class="time-badge">14h30</span> Visites guidées des expositions</h2>
+            <ul class="programme-list">
+                <li>
+                    <strong>Photos « Nous, les habitant·es »</strong>
+                    <p>Pierre Souchar, photographe et habitant de la rue, photographie ses voisins et voisines dans leur lieu préféré, chez eux, chez elles.</p>
+                </li>
+                <li>
+                    <strong>Des décorations de « Koinobori »</strong>
+                    <p>Pendant trois mois, les voisin·es fabriquent des poissons à suspendre sur les conseils de l'artiste Paule Kingleur.</p>
+                </li>
+                <li>
+                    <strong>Histoire du Rond de Jardin</strong>
+                    <p>Deux voisin·es racontent la création et l'évolution du Rond de jardin.</p>
+                </li>
+                <li>
+                    <strong>Histoire de la rue Becquerel</strong>
+                    <p>Deux voisin·es recherchent et questionnent les amis, les voisins et les archives pour retracer l'histoire de notre rue.</p>
+                </li>
+                <li>
+                    <strong>L'histoire d'une maison</strong>
+                    <p>À partir d'archives municipales et personnelles, des maisons se dévoilent.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="programme-block">
+            <h2><span class="time-badge">15h30</span> Concerts et animation</h2>
+            <p class="programme-note">🍰 <strong>Ouverture de la buvette :</strong> café, gâteaux et boissons sans alcool à prix libre (vous pouvez apporter votre verre et bien sûr un peu de monnaie).</p>
+
+            <h3>Concerts</h3>
+            <ul class="concerts-list">
+                <li><span class="concert-time">15h30</span> Musique irlandaise avec <strong>Rakish et François</strong></li>
+                <li><span class="concert-time">16h30</span> Cuivres et swing avec l'École de musique <strong>Zef Musik</strong> puis <strong>« The Wokes of Life »</strong></li>
+                <li><span class="concert-time">17h30</span> Rock français avec <strong>« On dit de nous »</strong></li>
+                <li><span class="concert-time">Pause</span> Pause apéro</li>
+                <li><span class="concert-time">19h30</span> Fest-noz avec <strong>« Bep Sort »</strong></li>
+                <li><span class="concert-time">22h00</span> Funk avec les <strong>« Funky Dirty Chicken »</strong></li>
+            </ul>
+
+            <p class="programme-note">🎉 <strong>Activités surprises</strong> pour les grands et les petits toute l'après-midi !</p>
+        </div>
+
+        <div class="programme-block">
+            <h2><span class="time-badge">18h30</span> Apéro et repas</h2>
+            <ul class="programme-list">
+                <li>
+                    <strong>Apéro offert</strong>
+                    <p>Offert par les voisin·es de la rue Becquerel de 18h30 à 19h30.</p>
+                </li>
+                <li>
+                    <strong>Food Trucks</strong>
+                    <p>Ouverture de deux Food Trucks : <strong>Sabor Latino</strong> et <strong>Maud'Billig</strong> – empanadas ou crêpes, choisissez votre menu !</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <a href="index.html#event" class="btn-back">← Retour à l'accueil</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 {{association.name}}. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
