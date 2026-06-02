@@ -35,6 +35,14 @@ nav {
     font-size: 1.4rem;
     font-weight: 700;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    height: 36px;
+    width: auto;
 }
 
 nav ul {
