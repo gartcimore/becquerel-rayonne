@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{association.name}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">☢️ {{association.name}}</div>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#event">Événement</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>{{association.name}}</h1>
+        <p class="tagline">{{association.tagline}}</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Qui sommes-nous ?</h2>
+        <p>{{association.description}}</p>
+    </section>
+
+    <section id="event" class="event">
+        <h2>Prochain événement</h2>
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">{{event.day}}</span>
+                <span class="month">{{event.month}}</span>
+                <span class="year">{{event.year}}</span>
+            </div>
+            <div class="event-details">
+                <h3>{{event.title}}</h3>
+                <p>{{event.description}}</p>
+                <p class="event-location">📍 {{event.location}}</p>
+                <p class="event-time">🕐 {{event.time}}</p>
+            </div>
+        </div>
+        <img src="../eflyer.png" alt="Affiche de l'événement" class="event-flyer">
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Nous contacter</h2>
+        <div class="contact-info">
+            <p>📧 <a href="mailto:{{association.email}}">{{association.email}}</a></p>
+            <p>📍 {{association.location}}</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 {{association.name}}. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

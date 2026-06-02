@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{association.name}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">{{association.name}}</a>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#event">Événement</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Becquerel<br>Rayonne</h1>
+            <p>{{association.tagline}}</p>
+        </section>
+
+        <section id="about">
+            <h2>À propos</h2>
+            <p>{{association.description}}</p>
+        </section>
+
+        <hr>
+
+        <section id="event">
+            <h2>Prochain événement</h2>
+            <article class="event-card">
+                <time datetime="{{event.date}}">{{event.dateDisplay}}</time>
+                <h3>{{event.title}}</h3>
+                <p>{{event.description}}</p>
+                <dl>
+                    <dt>Lieu</dt>
+                    <dd>{{event.location}}</dd>
+                    <dt>Horaires</dt>
+                    <dd>{{event.time}}</dd>
+                </dl>
+            </article>
+            <img src="../eflyer.png" alt="Affiche de l'événement" class="event-flyer">
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <address>
+                <p><a href="mailto:{{association.email}}">{{association.email}}</a></p>
+                <p>{{association.location}}</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 {{association.name}}</p>
+    </footer>
+</body>
+</html>

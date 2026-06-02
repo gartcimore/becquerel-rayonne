@@ -1,0 +1,20 @@
+{
+  "association": {
+    "name": "Becquerel Rayonne",
+    "tagline": "Animation citoyenne et amélioration de la qualité de vie de la rue Becquerel et de ses habitants",
+    "description": "Becquerel Rayonne est une association dédiée à l'animation citoyenne et à l'amélioration de la qualité de vie de la rue Becquerel et de ses habitants. Nous organisons des événements, des rencontres et des initiatives collectives pour renforcer le lien social dans notre quartier.",
+    "location": "Brest, France",
+    "email": "becquerel.kerigonan@gmail.com"
+  },
+  "event": {
+    "title": "100 ans de la rue",
+    "description": "Célébrons ensemble le centenaire de la rue Becquerel !",
+    "date": "2026-06-06",
+    "day": "6",
+    "month": "JUIN",
+    "year": "2026",
+    "dateDisplay": "6 juin 2026",
+    "location": "Brest, rue Becquerel",
+    "time": "14h00 – 00h00"
+  }
+}
