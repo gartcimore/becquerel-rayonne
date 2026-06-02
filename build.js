@@ -11,15 +11,8 @@ function render(template, data) {
   });
 }
 
-const themes = ['modern', 'minimal'];
+const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf-8');
+const html = render(template, content);
+fs.writeFileSync(path.join(__dirname, 'index.html'), html, 'utf-8');
 
-for (const theme of themes) {
-  const templatePath = path.join(__dirname, theme, 'template.html');
-  const outputPath = path.join(__dirname, theme, 'index.html');
-
-  const template = fs.readFileSync(templatePath, 'utf-8');
-  const html = render(template, content);
-  fs.writeFileSync(outputPath, html, 'utf-8');
-
-  console.log(`✓ ${theme}/index.html generated`);
-}
+console.log('✓ index.html generated');

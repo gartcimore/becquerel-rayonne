@@ -6,17 +6,12 @@ Site web de l'association Becquerel Rayonne.
 
 ```
 becquerel-rayonne/
-├── content.json          ← contenu du site (source unique)
-├── build.js              ← génère les index.html à partir des templates
-├── eflyer.png            ← affiche du prochain événement
-├── modern/
-│   ├── template.html     ← template avec {{placeholders}}
-│   ├── style.css
-│   └── index.html        ← généré (ne pas éditer directement)
-└── minimal/
-    ├── template.html
-    ├── style.css
-    └── index.html        ← généré (ne pas éditer directement)
+├── content.json      ← contenu du site (source unique)
+├── template.html     ← template avec {{placeholders}}
+├── build.js          ← génère index.html à partir du template
+├── style.css         ← styles
+├── eflyer.png        ← affiche du prochain événement
+└── index.html        ← généré (ne pas éditer directement)
 ```
 
 ## Modifier le contenu
@@ -28,8 +23,6 @@ becquerel-rayonne/
 ```bash
 node build.js
 ```
-
-Cela régénère `modern/index.html` et `minimal/index.html` à partir des templates et du contenu défini dans `content.json`.
 
 ## Pré-requis
 
