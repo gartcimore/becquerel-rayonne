@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html style.css _site/
-          cp eflyer.png _site/ 2>/dev/null || true
+          cp eflyer.png eflyer.webp _site/ 2>/dev/null || true
 
       - uses: actions/upload-pages-artifact@v4
         with:
